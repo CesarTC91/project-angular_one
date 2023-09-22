@@ -8,24 +8,28 @@
 <p>Edad de la persona {{person.age}}</p>
 <button (click)="increaseAge()">Incrementar Edad</button>
 <button (click)="decreaseAge()">Disminuir Edad</button>
-<hr/>
+<hr />
 
 <!--Ejemplo del manejo del evento Scroll-->
 
 <div class="box" (scroll)="onScroll($event)">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam reiciendis sequi autem natus iste facere inventore sit voluptatem pariatur in, architecto mollitia minus ut et officiis consequuntur magnam consequatur!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam reiciendis sequi autem natus iste facere
+    inventore sit voluptatem pariatur in, architecto mollitia minus ut et officiis consequuntur magnam consequatur!.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt minus vel, enim architecto harum
+    laudantium repudiandae quaerat eligendi hic sequi quidem velit cumque doloremque assumenda porro cupiditate ad
+    praesentium?</p>
 </div>
 
 <!--Esta Sección corresponde al concepto de Property Binding-->
-<hr/>
+<hr />
 <h1>PROPIEDADES</h1>
 <button [disabled]="btnDisabled">Enviar Datos</button>
-<input type="text" [value] = "name" />
+<input type="text" [value]="name" />
 <progress max="100" [value]="person.age"></progress>
-<img width="130" [src]="image"/>
+<img width="130" [src]="image" />
 
 <!--Este Seccoón corresponde al concepto de String Interpolation-->
-<hr/>
+<hr />
 <h1>Hola Angular</h1>
 <h2>{{'Hola Angular de Nuevo'.repeat(3)}}</h2>
 
@@ -33,4 +37,4 @@
 
 <h3>Hola mi nombre es {{name}} y mi edad es de {{age}}</h3>
 
-<img src={{image}} alt="Toyota Corolla"/>
+<img src={{image}} alt="Toyota Corolla" />
